@@ -2,8 +2,8 @@ library(readxl)
 library(dplyr)
 library(data.table)
 
-datos<-fread("C:/Docunentos mios/Fundamentos de ciencias de datos/Tarea_01/20160927_EVALUACION_DOCENTE_2015_20160609_PUBL.csv",
-             encoding = "Latin-1")
+datos<-fread("",#<============================Aqui colocas la ruta del archivo
+             encoding = "Latin-1")#<===========Sin esta linea no lee los datos que tengan por ejemplo Ñ; Ñuble
 
 
 tabla_fin<-datos %>%
@@ -48,6 +48,7 @@ tabla_fin<-datos %>%
 
 tabla_fin<-datos %>%
   filter(is.na(M2D5_PJE) & is.na(M2D6_PJE) & is.na(M2D7_PJE))
+
 
 
 
