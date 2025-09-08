@@ -49,6 +49,16 @@ tabla_fin<-datos %>%
 tabla_fin<-datos %>%
   filter(is.na(M2D5_PJE) & is.na(M2D6_PJE) & is.na(M2D7_PJE))
 
+##############################################################
+
+#Referencia pregunta 7 parte 1
+boxplot(datos[19:21])
+
+boxplot(datos[19])
+
+boxplot (c (unlist(datos[19]),unlist(datos[20]),unlist(datos[21])))
+
+
 
 
 
