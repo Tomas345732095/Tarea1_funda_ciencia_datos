@@ -33,6 +33,7 @@ tabla_fin<-datos %>%
 
 
 ####################################################
+#Datos nulos
 tabla_fin<-datos %>%
   filter(is.na(M2D7_PJE))
 
@@ -57,6 +58,7 @@ boxplot(datos[19:21])
 boxplot(datos[19])
 
 boxplot (c (unlist(datos[19]),unlist(datos[20]),unlist(datos[21])))
+
 
 
 
